@@ -1,0 +1,107 @@
+/* $Id: styles.css,v 1.1.2.2.2.1 2011/01/11 01:08:49 dvessel Exp $ */
+
+h1#site-name {
+  margin-bottom: 0;
+}
+
+#site-header,
+#site-subheader,
+#footer-region,
+.column,
+.node,
+.comment,
+.block {
+  margin-bottom: 1.5em;
+}
+
+ul.main-menu,
+ul.secondary-menu {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 11px/17px "Arial Regular", Arial, "Helvetica Neue", helveticas, sans-serif;
+  letter-spacing: 0.03em;
+  background-color: #EEEFF0;
+}
+
+.thelead {
+  color: #343434;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.menu li.leaf{
+  border-top: solid 1px #cecece;
+  text-transform: uppercase; 
+  list-style: none;
+  padding: 0;
+  text-transform: uppercase;
+  color: black;
+  font-size: 12px;
+  line-height: 18px;
+  margin: 0;
+  list-style-type: none;
+  padding: 5px 20px;
+  }
+}
+
+li a, {
+  text-decoration: none !important;
+  color: black;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.active {
+  font-weight: bold;
+}
+
+#site-header, #main, #sidebar-left, #page {
+  background-color:white;
+  overflow
+}
+#main {
+  overflow: hidden;
+}
+#site-subheader {
+  background-color:red;
+}
+
+.view-partners-block .field-name-field-logo img, 
+.view-software .field-name-field-logo img, 
+.view-technology .field-name-field-logo img, 
+.view-partners .field-name-field-logo img, 
+.view-demonstrators .field-name-field-logo img {
+  float:right;
+}
+
+.view-software .views-row-even .field-name-field-logo img, 
+.view-technology .views-row-even .field-name-field-logo img, 
+.view-partners .views-row-even .field-name-field-logo img, 
+.view-demonstrators .views-row-even .field-name-field-logo img {
+  float:left;
+}
+
+.view-software .views-row,
+.view-technology .views-row,
+.view-demonstrators .views-row,
+.view-partners .views-row {
+  clear:both; 
+  padding:10px 10px 0px 0px;
+  padding-bottom:30px;
+  border-top: solid 1px #cecece;
+}
+.view-partners-block .views-slideshow-cycle-main-frame  {
+  border-top: solid 1px #cecece;
+  border-bottom: solid 1px #cecece;
+  margin:10px 0;
+  padding:5px 0;
+}
+
+
+/*.menu li.first{ border-top: solid 0px #cecece;}
