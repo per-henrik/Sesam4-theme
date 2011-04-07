@@ -61,10 +61,15 @@ a {
   font-weight: bold;
 }
 
-#site-header, #main, #sidebar-left, #page {
+#site-header, #sidebar-left {
   background-color:white;
-  overflow
 }
+
+#site-header {
+  margin-bottom:100px;
+  background-color:red;
+}
+
 #main {
   overflow: hidden;
 }
@@ -103,5 +108,16 @@ a {
   padding:5px 0;
 }
 
+.dropshadow {
+-moz-box-shadow: 2px 2px 3px #DDD;
+-webkit-box-shadow: 2px 2px 3px #DDD;
+box-shadow: 2px 2px 3px #DDD;
+-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#AAA')";
+filter: progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#AAA');
+}
+
+.debugborder {
+  border: 3px dotted green;
+}
 
 /*.menu li.first{ border-top: solid 0px #cecece;}

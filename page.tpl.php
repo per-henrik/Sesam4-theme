@@ -3,7 +3,7 @@
 ?>
 <div id="page" class="container-16 clearfix">
 
-  <div id="site-header" class="clearfix">
+  <div id="site-header" class="clearfix dropshadow">
     <div id="branding" class="grid-4 clearfix">
     <?php if ($linked_logo_img): ?>
       <span id="logo" class="grid-1 alpha"><?php print $linked_logo_img; ?></span>
@@ -42,7 +42,7 @@
   <?php endif; ?>
   </div>
 
-
+<div id="content-area" clasS="debugborder">
   <div id="main" class="column <?php print ns('grid-16', $page['sidebar_first'], 4, $page['sidebar_second'], 3) . ' ' . ns('push-4', !$page['sidebar_first'], 4); ?>">
     <?php print $breadcrumb; ?>
     <?php print render($title_prefix); ?>
@@ -83,5 +83,5 @@
       </div>
     <?php endif; ?>
   </div>
-
+</div>
 </div>
