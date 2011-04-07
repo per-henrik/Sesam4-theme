@@ -70,13 +70,13 @@
     <?php endif; ?>
 
     <div class="clearfix"></div>
+    <div id="footer" class="prefix-1 suffix-1">
+      <?php if ($page['footer']): ?>
+        <div id="footer-region" class="region grid-14 clearfix">
+          <?php print render($page['footer']); ?>
+        </div>
+      <?php endif; ?>
+    </div>
   </div> <!-- end main-area-->
 
-  <div id="footer" class="prefix-1 suffix-1">
-    <?php if ($page['footer']): ?>
-      <div id="footer-region" class="region grid-14 clearfix">
-        <?php print render($page['footer']); ?>
-      </div>
-    <?php endif; ?>
-  </div>
 </div>
