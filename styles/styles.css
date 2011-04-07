@@ -61,13 +61,12 @@ a {
   font-weight: bold;
 }
 
-#site-header, #sidebar-left {
+#site-header, #sidebar-left, #site-header{
   background-color:white;
 }
 
 #site-header {
   margin-bottom:100px;
-  background-color:red;
 }
 
 #main {
