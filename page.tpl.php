@@ -69,7 +69,6 @@
       </div>
     <?php endif; ?>
 
-    <div class="clearfix"></div>
     <div id="footer" class="prefix-1 suffix-1">
       <?php if ($page['footer']): ?>
         <div id="footer-region" class="region grid-14 clearfix">
@@ -77,6 +76,9 @@
         </div>
       <?php endif; ?>
     </div>
+
+    <div class="clearfix"></div>
+
   </div> <!-- end main-area-->
 
 </div>
