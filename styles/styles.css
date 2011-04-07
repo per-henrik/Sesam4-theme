@@ -61,19 +61,22 @@ a {
   font-weight: bold;
 }
 
-#site-header, #sidebar-left, #site-header{
+#site-header, #sidebar-left, #site-header, #main{
   background-color:white;
 }
 
 #site-header {
-  margin-bottom:100px;
+  margin-bottom:10px;
+  padding: 0 0 10px 0;
+}
+
+#main-area {
+  background-color:white;
+  padding:10px 0 0 0 ;
 }
 
 #main {
   overflow: hidden;
-}
-#site-subheader {
-  background-color:red;
 }
 
 .view-partners-block .field-name-field-logo img, 
@@ -107,7 +110,7 @@ a {
   padding:5px 0;
 }
 
-.dropshadow {
+.dropshadow{
 -moz-box-shadow: 2px 2px 3px #DDD;
 -webkit-box-shadow: 2px 2px 3px #DDD;
 box-shadow: 2px 2px 3px #DDD;
@@ -115,8 +118,8 @@ box-shadow: 2px 2px 3px #DDD;
 filter: progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#AAA');
 }
 
-.debugborder {
-  border: 3px dotted green;
+.debug {
+  background-color:green;
 }
 
 /*.menu li.first{ border-top: solid 0px #cecece;}

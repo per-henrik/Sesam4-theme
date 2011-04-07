@@ -3,7 +3,7 @@
 ?>
 <div id="page" class="container-16 clearfix">
 
-  <div id="site-header" class="clearfix dropshadow">
+  <div id="site-header" class="dropshadow clearfix">
     <div id="branding" class="grid-4 clearfix">
     <?php if ($linked_logo_img): ?>
       <span id="logo" class="grid-1 alpha"><?php print $linked_logo_img; ?></span>
@@ -16,16 +16,16 @@
     <?php endif; ?>
     </div>
 
-  <?php if ($main_menu_links || $secondary_menu_links): ?>
-    <div id="site-menu" class="grid-12">
-      <?php print $main_menu_links; ?>
-      <?php print $secondary_menu_links; ?>
-    </div>
-  <?php endif; ?>
+    <?php if ($main_menu_links || $secondary_menu_links): ?>
+      <div id="site-menu" class="grid-12">
+        <?php print $main_menu_links; ?>
+        <?php print $secondary_menu_links; ?>
+      </div>
+    <?php endif; ?>
 
-  <?php if ($page['search_box']): ?>
-    <div id="search-box" class="grid-6 prefix-10"><?php print render($page['search_box']); ?></div>
-  <?php endif; ?>
+    <?php if ($page['search_box']): ?>
+      <div id="search-box" class="grid-6 prefix-10"><?php print render($page['search_box']); ?></div>
+    <?php endif; ?>
   </div>
 
   <div id="site-subheader" class="prefix-1 suffix-1 clearfix">
@@ -42,38 +42,35 @@
   <?php endif; ?>
   </div>
 
-  <div id="main" class="column <?php print ns('grid-16', $page['sidebar_first'], 4, $page['sidebar_second'], 3) . ' ' . ns('push-4', !$page['sidebar_first'], 4); ?>">
-    <?php print $breadcrumb; ?>
-    <?php print render($title_prefix); ?>
-    <?php if ($title): ?>
-      <h1 class="title" id="page-title"><?php print $title; ?></h1>
-    <?php endif; ?>
-    <?php print render($title_suffix); ?>      
-    <?php if ($tabs): ?>
-      <div class="tabs"><?php print render($tabs); ?></div>
-    <?php endif; ?>
-    <?php print $messages; ?>
-    <?php print render($page['help']); ?>
+  <div id="main-area" class="dropshadow">
+    <div id="main" class="column <?php print ns('grid-16', $page['sidebar_first'], 4, $page['sidebar_second'], 3) . ' ' . ns('push-4', !$page['sidebar_first'], 4); ?>">
+      <?php print $breadcrumb; ?>
+      <?php print render($title_prefix); ?>
+      <?php if ($title): ?>
+        <h1 class="title" id="page-title"><?php print $title; ?></h1>
+      <?php endif; ?>
+      <?php print render($title_suffix); ?>      
+      <?php if ($tabs): ?>
+        <div class="tabs"><?php print render($tabs); ?></div>
+      <?php endif; ?>
+      <?php print $messages; ?>
+      <?php print render($page['help']); ?>
 
-    <div id="main-content" class="region clearfix">
-      <?php print render($page['content']); ?>
+      <div id="main-content" class="region clearfix">
+        <?php print render($page['content']); ?>
+      </div>
+
+      <?php print $feed_icons; ?>
     </div>
 
-    <?php print $feed_icons; ?>
-  </div>
+    <?php if ($page['sidebar_first']): ?>
+      <div id="sidebar-left" class="column sidebar region grid-4 <?php print ns('pull-12', $page['sidebar_second'], 3); ?>">
+        <?php print render($page['sidebar_first']); ?>
+      </div>
+    <?php endif; ?>
 
-<?php if ($page['sidebar_first']): ?>
-  <div id="sidebar-left" class="column sidebar region grid-4 <?php print ns('pull-12', $page['sidebar_second'], 3); ?>">
-    <?php print render($page['sidebar_first']); ?>
-  </div>
-<?php endif; ?>
-
-<?php if ($page['sidebar_second']): ?>
-  <div id="sidebar-right" class="column sidebar region grid-3">
-    <?php print render($page['sidebar_second']); ?>
-  </div>
-<?php endif; ?>
-
+    <div class="clearfix"></div>
+  </div> <!-- end main-area-->
 
   <div id="footer" class="prefix-1 suffix-1">
     <?php if ($page['footer']): ?>
