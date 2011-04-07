@@ -4,6 +4,13 @@ h1#site-name {
   margin-bottom: 0;
 }
 
+h1 {
+font: 30px/1.5em "Georgia","Georgia Regular", "Times New Roman", serif;
+color: #00ADEE;
+padding: 0 0 0.5em;
+margin: 0;
+}
+
 #site-header,
 #site-subheader,
 #footer-region,
@@ -111,11 +118,11 @@ a {
 }
 
 .dropshadow{
--moz-box-shadow: 2px 2px 3px #DDD;
--webkit-box-shadow: 2px 2px 3px #DDD;
-box-shadow: 2px 2px 3px #DDD;
--ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#AAA')";
-filter: progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#AAA');
+  -moz-box-shadow: 2px 2px 3px #DDD;
+  -webkit-box-shadow: 2px 2px 3px #DDD;
+  box-shadow: 2px 2px 3px #DDD;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#AAA')";
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#AAA');
 }
 
 .debug {
@@ -123,9 +130,10 @@ filter: progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Colo
 }
 
 #footer {
+  background: white url('http://sesam4.net/sites/sesam4.net/themes/sesam4/images/nfr-logo.gif') no-repeat right;
+  width:900px;
   color: #8C8C8C;
-  padding: 10px;
-  padding-left: 250px;
+  padding:10px;
   border-top: 1px #CECECE solid;
 }
 
