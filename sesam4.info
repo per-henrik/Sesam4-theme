@@ -2,7 +2,7 @@ name = Sesam4
 base theme = ninesixty
 core = 7.x
 engine = phptemplate
-
+description = Hosted at <a href="https://github.com/peroja/Sesam4-theme">https://github.com/peroja/Sesam4-theme</a>
 
 stylesheets[all][] = styles/styles.css
 
