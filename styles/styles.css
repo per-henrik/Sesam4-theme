@@ -62,7 +62,10 @@ li a, {
 }
 a {
   text-decoration: none;
-  color: black;
+  color: #00ADEE;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, .menu a {
+  color:black;
 }
 
 /* END MENU */
@@ -77,8 +80,6 @@ body {
   font-size: 17px;
   line-height: 24px;
 }
-
-
 
 .active {
   font-weight: bold;
