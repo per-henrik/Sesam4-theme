@@ -92,11 +92,14 @@ body {
 #site-header {
   margin-bottom:10px;
   padding: 0 0 10px 0;
+  outline: 1px solid #DDD;
+
 }
 
 #main-area {
   background-color:white;
   padding:10px 0 0 0 ;
+ outline: 1px solid #DDD;
 }
 
 #main {
@@ -145,12 +148,17 @@ body {
   background-color:green;
 }
 
-#footer {
-  background: white url('http://sesam4.net/sites/sesam4.net/themes/sesam4/images/nfr-logo.gif') no-repeat right;
-  width:900px;
+#footer{
   color: #8C8C8C;
-  padding:10px;
-  height:50px;
+  padding:10px 150px 10px 10px;
+}
+
+#footer #block-block-1 div.content {
+  padding-bottom:50px;
+  width:920px;
+  border-top: solid 1px #CECECE;
+  text-align:center;
+  font-weight:bold;
 }
 
 /*.menu li.first{ border-top: solid 0px #cecece;} */
