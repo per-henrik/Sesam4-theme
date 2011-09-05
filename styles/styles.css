@@ -130,6 +130,11 @@ body {
   padding-bottom:30px;
   border-top: solid 1px #cecece;
 }
+
+.views-field-field-format {
+  font-size:120%;
+}
+
 .view-partners-block .views-slideshow-cycle-main-frame  {
   border-top: solid 1px #cecece;
   margin:10px 0;
